@@ -262,7 +262,6 @@ header h1 {
   color: #37474f;
 }
 
-/* === ACTION BUTTONS === */
 .btn-action {
   padding: 7px 14px;
   margin: 0 3px;
@@ -353,7 +352,6 @@ header h1 {
   }
 }
 
-/* Styling tambahan untuk form filter di halaman jadwal */
 .filter-form {
   background: #fff;
   padding: 15px 20px;

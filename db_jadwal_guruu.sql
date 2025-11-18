@@ -1,4 +1,3 @@
--- 1. Buat database (jika belum ada)
 CREATE DATABASE IF NOT EXISTS db_jadwal_guruu;
 USE db_jadwal_guruu;
 
