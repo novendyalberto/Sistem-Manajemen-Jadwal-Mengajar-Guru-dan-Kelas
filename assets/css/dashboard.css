@@ -16,7 +16,7 @@ body {
   background: white;
   padding: 25px 30px;
   border-radius: 12px;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 550px;
 }
@@ -305,15 +305,16 @@ header h1 {
 .btn-delete:hover {
   background: #c82333;
 }
+
 .btn {
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
-    font-size: 14px;
-    color: #667eea;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 /* === RESPONSIVE === */
@@ -407,143 +408,149 @@ header h1 {
 .btn-reset:hover {
   background-color: rgba(255, 255, 255, 0.714);
 }
+
 .profile-card {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
+
 .profile-photo {
-    display: block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 30px;
-    border: 5px solid #3498db;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 30px;
+  border: 5px solid #3498db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 .profile-photo:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
+
 .profile-info {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 .profile-info p {
-    font-size: 1.1rem;
-    color: #555;
-    margin: 15px 0;
-    padding: 12px;
-    background: #f8f9fa;
-    border-left: 4px solid #3498db;
-    border-radius: 4px;
+  font-size: 1.1rem;
+  color: #555;
+  margin: 15px 0;
+  padding: 12px;
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
 }
 
 .profile-info strong {
-    color: #2c3e50;
-    display: inline-block;
-    min-width: 140px;
+  color: #2c3e50;
+  display: inline-block;
+  min-width: 140px;
 }
+
 .profile-actions {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
 }
+
 .profile-card form {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .profile-card form label {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 8px;
-    color: #2c3e50;
-    font-weight: 500;
-    font-size: 1rem;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .profile-card form input[type="text"],
 .profile-card form input[type="email"],
 .profile-card form input[type="file"] {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #dfe6e9;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .profile-card form input[type="text"]:focus,
 .profile-card form input[type="email"]:focus {
-    outline: none;
-    border-color: #3498db;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
 .profile-card form input[type="file"] {
-    padding: 10px;
-    cursor: pointer;
-    background: #f8f9fa;
+  padding: 10px;
+  cursor: pointer;
+  background: #f8f9fa;
 }
 
 .profile-card form input[type="file"]:hover {
-    background: #e9ecef;
+  background: #e9ecef;
 }
 
 .profile-card form button {
-    margin-top: 30px;
-    width: 100%;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .profile-card form button[type="button"] {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .btn-editprofil {
-    padding: 12px 30px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-    text-align: center;  
-    background: linear-gradient(135deg, #28a745, #28a745);
-    color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
+  background: linear-gradient(135deg, #28a745, #28a745);
+  color: white;
 }
 
 
 .btn-ubahpassword {
   padding: 12px 30px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-    text-align: center;  
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
   background: linear-gradient(135deg, #e74c3c, #c0392b);
-    color: white;
+  color: white;
 }
-.profil-akun{
+
+.profil-akun {
   background: white;
   padding: 20px 30px;
   border-radius: 12px;
@@ -555,112 +562,113 @@ header h1 {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 0.5px;
-   color: #1a237e;
+  color: #1a237e;
   font-size: 22px;
   font-weight: 700;
 }
 
 .alert {
-    padding: 2px;
-    margin-bottom: 20px;
-    width: 80%;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #d4edda, #c3e6cb);
-    border: 2px solid #28a745;
-    color: #155724;
-    font-weight: 500;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
-    animation: slideDown 0.5s ease;
-    max-width: 100%;
-    text-align: center;
+  padding: 2px;
+  margin-bottom: 20px;
+  width: 80%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  border: 2px solid #28a745;
+  color: #155724;
+  font-weight: 500;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+  animation: slideDown 0.5s ease;
+  max-width: 100%;
+  text-align: center;
 }
 
 .alert::before {
-    content: "✓";
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    background: #28a745;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    animation: checkPop 0.6s ease;
+  content: "✓";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  animation: checkPop 0.6s ease;
 }
 
 .alert1 {
-    padding: 5px;
-    margin: 2px;
-    width: 50%;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #d4edda, #c3e6cb);
-    border: 2px solid #28a745;
-    color: #155724;
-    font-weight: 500;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
-    animation: slideDown 0.5s ease;
-    max-width: 100%;
-    text-align: center;
+  padding: 5px;
+  margin: 2px;
+  width: 50%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  border: 2px solid #28a745;
+  color: #155724;
+  font-weight: 500;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+  animation: slideDown 0.5s ease;
+  max-width: 100%;
+  text-align: center;
 }
+
 .alert1::before {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    background: #28a745;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    animation: checkPop 0.6s ease;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  animation: checkPop 0.6s ease;
 }
 
 .alert2 {
-    padding: 5px;
-    margin: auto;
-    width: 50%;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #d4edda, #c3e6cb);
-    border: 2px solid #28a745;
-    color: #155724;
-    font-weight: 500;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
-    animation: slideDown 0.5s ease;
-    max-width: 100%;
-    text-align: center;
+  padding: 5px;
+  margin: auto;
+  width: 50%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  border: 2px solid #28a745;
+  color: #155724;
+  font-weight: 500;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+  animation: slideDown 0.5s ease;
+  max-width: 100%;
+  text-align: center;
 }
 
 .alert2::before {
-    content: "✓";
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 28px;
-    height: 28px;
-    background: #28a745;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    animation: checkPop 0.6s ease;
+  content: "✓";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  animation: checkPop 0.6s ease;
 }
 
 .btn-simpanperubahan {
@@ -673,16 +681,35 @@ header h1 {
   font-weight: 600;
 }
 
-.btn-simpanperubahan:hover{
+.btn-simpanperubahan:hover {
   background: #1565c0;
 }
 
 .btn-kembali {
-   background: rgb(81, 78, 78);
+  background: rgb(81, 78, 78);
   color: white;
   padding: 10px 18px;
   border-radius: 6px;
   border: none;
   cursor: pointer;
   font-weight: 600;
+}
+
+.pencarian {
+  width: 60%;
+}
+
+.btn-activate {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  display: inline-block;
+  margin: 2px;
+}
+
+.btn-activate:hover {
+  background-color: #0056b3;
 }

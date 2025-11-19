@@ -13,7 +13,10 @@ include '../config/database.php';
       <tr>
         <th>No</th>
         <th>Nama Guru</th>
+        <th>NIP</th>
         <th>Mata Pelajaran</th>
+        <th>No HP</th>
+        <th>Email</th>
         <th>Aksi</th>
       </tr>
     </thead>
@@ -28,7 +31,11 @@ include '../config/database.php';
           <tr>
             <td>{$no}</td>
             <td>{$row['nama_guru']}</td>
+            <td>{$row['nip']}</td>
             <td>{$row['mapel']}</td>
+            <td>{$row['no_hp']}</td>
+            <td>{$row['email']}</td>
+
             <td>
               <a href='dashboard.php?page=edit_guru&id={$row['id']}' class='btn-edit'>Edit</a>
               <a href='dashboard.php?page=data_guru&hapus=1&id={$row['id']}'
@@ -39,7 +46,7 @@ include '../config/database.php';
           $no++;
         }
       } else {
-        echo "<tr><td colspan='4' style='text-align:center;'>Belum ada data guru</td></tr>";
+        echo "<tr><td colspan='10' style='text-align:center;'>Belum ada data guru</td></tr>";
       }
       ?>
     </tbody>

@@ -1,5 +1,5 @@
-<?php 
-include '../config/database.php'; 
+<?php
+
 $pemberitahuan = '';
 
 if (isset($_POST['simpan'])) {
@@ -16,27 +16,31 @@ if (isset($_POST['simpan'])) {
 ?>
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <title>Tambah Kelas</title>
     <link rel="stylesheet" href="../assets/css/dashboard.css">
 </head>
+
 <body>
-<div class="container">
-    <h2>Tambah Data Kelas</h2>
-    <?php if ($pemberitahuan): ?>
-        <div class="alert"<?= strpos($pemberitahuan, 'berhasil') ? 'success' : 'error' ?>">
-            <?= $pemberitahuan ?>
-        </div>
-    <?php endif; ?>
-    <form method="POST">
-        <label>Nama Kelas:</label>
-        <input type="text" name="nama_kelas" placeholder="Contoh: TKJ 1" required><br>
-        <label>Tingkat:</label>
-        <input type="text" name="tingkat" placeholder="Contoh: XI" required><br>
-        <button type="submit" class="btn-simpanperubahan" name="simpan">Simpan</button>
-        <button type="button" class="btn-kembali" onclick="window.location.href='dashboard.php?page=data_kelas'">Kembali</button>
-    </form>
-</div>
+    <div class="container">
+        <h2>Tambah Data Kelas</h2>
+        <?php if ($pemberitahuan): ?>
+            <div class="alert" <?= strpos($pemberitahuan, 'berhasil') ? 'success' : 'error' ?>">
+                <?= $pemberitahuan ?>
+            </div>
+        <?php endif; ?>
+        <form method="POST">
+            <label>Nama Kelas:</label>
+            <input type="text" name="nama_kelas" placeholder="Contoh: TKJ 1" required><br>
+            <label>Tingkat:</label>
+            <input type="text" name="tingkat" placeholder="Contoh: XI" required><br>
+            <button type="submit" class="btn-simpanperubahan" name="simpan">Simpan</button>
+            <button type="button" class="btn-kembali"
+                onclick="window.location.href='dashboard.php?page=data_kelas'">Kembali</button>
+        </form>
+    </div>
 </body>
+
 </html>

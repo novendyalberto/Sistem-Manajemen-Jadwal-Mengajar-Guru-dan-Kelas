@@ -1,7 +1,6 @@
 <?php
 include '../config/database.php';
 
-// Cek login
 if (!isset($_SESSION['user'])) {
     header("Location: ../../auth/login.php");
     exit;
@@ -33,7 +32,7 @@ if (isset($_POST['update'])) {
 
         if (in_array($ext, $allowed)) {
             if (move_uploaded_file($_FILES["foto"]["tmp_name"], $target)) {
-                
+
                 // Hapus foto lama jika ada
                 if (!empty($user['foto']) && file_exists("../uploads/" . $user['foto'])) {
                     unlink("../uploads/" . $user['foto']);
@@ -57,7 +56,7 @@ if (isset($_POST['update'])) {
         if (mysqli_query($conn, $sql)) {
             $_SESSION['user'] = $user_baru; // update session
             $pemberitahuan = "Profil berhasil diperbarui!";
-            
+
             // Refresh data
             $query = mysqli_query($conn, "SELECT * FROM users WHERE username='$user_baru'");
             $user = mysqli_fetch_assoc($query);
@@ -70,46 +69,50 @@ if (isset($_POST['update'])) {
 ?>
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <title>Edit Profil</title>
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
 </head>
+
 <body>
 
-<div class="profile-container">
-    <h1 class="profil-akun">Edit Profil</h1>
+    <div class="profile-container">
+        <h1 class="profil-akun">Edit Profil</h1>
 
-    <div class="profile-card">
+        <div class="profile-card">
 
-        <?php if (!empty($user['foto'])): ?>
-            <img class="profile-photo" src="../uploads/<?= htmlspecialchars($user['foto']) ?>">
-        <?php endif; ?>
+            <?php if (!empty($user['foto'])): ?>
+                <img class="profile-photo" src="../uploads/<?= htmlspecialchars($user['foto']) ?>">
+            <?php endif; ?>
 
-        <?php if ($pemberitahuan): ?>
-        <div class="alert2"><?= $pemberitahuan ?></div>
-    <?php endif; ?>
+            <?php if ($pemberitahuan): ?>
+                <div class="alert2"><?= $pemberitahuan ?></div>
+            <?php endif; ?>
 
-        <form method="POST" enctype="multipart/form-data">
+            <form method="POST" enctype="multipart/form-data">
 
-            <label>Nama Lengkap</label>
-            <input type="text" name="nama_lengkap" value="<?= htmlspecialchars($user['nama_lengkap']) ?>" required>
+                <label>Nama Lengkap</label>
+                <input type="text" name="nama_lengkap" value="<?= htmlspecialchars($user['nama_lengkap']) ?>" required>
 
-            <label>Email</label>
-            <input type="email" name="email" value="<?= htmlspecialchars($user['email']) ?>" required>
+                <label>Email</label>
+                <input type="email" name="email" value="<?= htmlspecialchars($user['email']) ?>" required>
 
-            <label>Username</label>
-            <input type="text" name="username" value="<?= htmlspecialchars($user['username']) ?>" required>
+                <label>Username</label>
+                <input type="text" name="username" value="<?= htmlspecialchars($user['username']) ?>" required>
 
-            <label>Foto Profil</label>
-            <input type="file" name="foto" accept="image/*">
+                <label>Foto Profil</label>
+                <input type="file" name="foto" accept="image/*">
 
-            <button type="submit" name="update" class="btn-simpanperubahan">Simpan Perubahan</button>
-            <button type="button" class="btn-kembali" onclick="window.location.href='dashboard.php?page=profile'">Kembali</button>
+                <button type="submit" name="update" class="btn-simpanperubahan">Simpan Perubahan</button>
+                <button type="button" class="btn-kembali"
+                    onclick="window.location.href='dashboard.php?page=profile'">Kembali</button>
 
-        </form>
+            </form>
+        </div>
     </div>
-</div>
 
 </body>
+
 </html>
